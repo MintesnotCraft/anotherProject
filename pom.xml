@@ -30,7 +30,18 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<classifier>---- select project type ----</classifier>
+					<cloudHubDeployment>
+                        <uri>https://anypoint.mulesoft.com</uri>
+                        <muleVersion>4.6-e-java17</muleVersion>
+                        <username>waliacoders</username>
+                        <password>Gingerbread9@gingerbread</password>
+                        <environment>Sandbox</environment>
+                        <applicationName>waliacoders</applicationName>
+                        <businessGroup>MuleSoft</businessGroup>
+                        <workerType>Micro</workerType>
+                        <workers>1</workers>
+                        <objectStoreV2>true</objectStoreV2>
+</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
